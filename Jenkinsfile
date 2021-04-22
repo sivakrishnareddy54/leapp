@@ -8,6 +8,11 @@ pipeline {
         }
        
           stage('test') {
+            when {
+              expression {
+                BRANCH_NAME == 'mem-leak
+              }
+            }
 	           steps {
                echo 'testing the application..'
              }
@@ -18,4 +23,13 @@ pipeline {
              }
         }
     }
+ # post {
+    always {
+      //
+    }
+    success {
+      build is successfull
+    }
+  }
 }
+#
