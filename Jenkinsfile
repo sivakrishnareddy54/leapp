@@ -10,7 +10,7 @@ pipeline {
           stage('test') {
             when {
               expression {
-                BRANCH_NAME == 'mem-leak
+                BRANCH_NAME == 'mem-leak'
               }
             }
 	           steps {
