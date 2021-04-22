@@ -8,12 +8,7 @@ pipeline {
         }
        
           stage('test') {
-            when {
-              expression {
-                BRANCH_NAME == 'mem-leak'
-              }
-            }
-	           steps {
+           steps {
                echo 'testing the application..'
              }
         } 
