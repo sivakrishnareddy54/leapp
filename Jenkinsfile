@@ -23,13 +23,3 @@ pipeline {
              }
         }
     }
- # post {
-    always {
-      //
-    }
-    success {
-      build is successfull
-    }
-  }
-}
-#
